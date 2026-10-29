@@ -10,7 +10,7 @@ pub mod utils;
 use crate::instructions::*;
 use crate::consts::AssetStatus;
 
-declare_id!("RWA1111111111111111111111111111111111111111");
+declare_id!("8CM5WK2EXXY9goXaTRnmKvFAxiSfVAmmTWBVX7X5zvBc");
 
 #[program]
 pub mod rwa_tokenization {

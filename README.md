@@ -134,7 +134,9 @@ Broadcast is opt-in (`execute: true`). HTTP to Metaplex/Genesis is injectable. T
 
 ## The program
 
-Placeholder program id: `RWA1111111111111111111111111111111111111111`
+Devnet program id: [`8CM5WK2EXXY9goXaTRnmKvFAxiSfVAmmTWBVX7X5zvBc`](https://explorer.solana.com/address/8CM5WK2EXXY9goXaTRnmKvFAxiSfVAmmTWBVX7X5zvBc?cluster=devnet) (devnet only; never deployed to mainnet).
+
+Build note: Anchor 0.30.1 IDL generation needs an older nightly with current Rust: `npm run build` sets `RUSTUP_TOOLCHAIN=nightly-2025-04-15` (install with `rustup toolchain install nightly-2025-04-15 --profile minimal`); `Cargo.lock` pins `proc-macro2 = 1.0.94`.
 
 | Instruction | Purpose |
 | --- | --- |

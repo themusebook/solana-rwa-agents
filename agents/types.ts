@@ -4,7 +4,7 @@ export const METAPLEX_API_BASE = 'https://api.metaplex.com';
 export const GENESIS_LAUNCH_PATH = '/v1/genesis/launch';
 export const GENESIS_LAUNCH_URL = `${METAPLEX_API_BASE}${GENESIS_LAUNCH_PATH}`;
 
-export const RWA_PROGRAM_ID = 'RWA1111111111111111111111111111111111111111';
+export const RWA_PROGRAM_ID = '8CM5WK2EXXY9goXaTRnmKvFAxiSfVAmmTWBVX7X5zvBc';
 export const RWA_ASSET_SEED = 'rwa_asset';
 export const TOKEN_PROGRAM_ID = 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA';
 export const SYSVAR_CLOCK = 'SysvarC1ock11111111111111111111111111111111';
