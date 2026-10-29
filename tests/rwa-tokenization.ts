@@ -15,6 +15,15 @@ describe("rwa-tokenization", () => {
   const owner = Keypair.generate();
   const assetId = Keypair.generate();
 
+  before(async () => {
+    // Fund the generated signers and wait for confirmation (fresh keypairs start at 0 SOL).
+    for (const kp of [authority, owner]) {
+      const sig = await provider.connection.requestAirdrop(kp.publicKey, 10 * anchor.web3.LAMPORTS_PER_SOL);
+      const bh = await provider.connection.getLatestBlockhash();
+      await provider.connection.confirmTransaction({ signature: sig, ...bh }, "confirmed");
+    }
+  });
+
   it("Initializes the global configuration", async () => {
     const [globalConfig] = PublicKey.findProgramAddressSync(
       [Buffer.from("rwa_global_config")],
